@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kérdező</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form" action="/general" method="POST">
+        <label class="text" for="kod">Add meg a linket</label>
+        <input class="input link-input" type="text" name="link" id="#link" oninvalid="this.setCustomValidity('Töltsd ki a link mezőt!')" oninput="setCustomValidity('')" required>
+        <button class="submit-btn" type="submit">Generál</button>        
+    </form>    
+</body>
+
+</html>

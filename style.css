@@ -11,12 +11,10 @@ html {
 body {
     font-family: sans-serif;
     background-image: linear-gradient(to bottom right,rgb(172, 66, 5),rgb(211, 181, 46));
-
-
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     flex-direction: column;
 }
 
@@ -34,6 +32,11 @@ body {
     border: 1px solid #777;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0, .2);
     transition: all .3s;
+    text-transform: uppercase;
+}
+
+.link-input {
+    text-transform: unset;
 }
 
 .input:focus {
@@ -41,4 +44,35 @@ body {
     border-radius: 10px;
     outline: none;
     box-shadow: 0 0.8rem 1.6rem rgba(0,0,0, .3);
+}
+
+.form {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submit-btn {
+    padding: 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+    width: 25rem;
+    font-weight: 600;
+    font-variant: small-caps;
+}
+
+.kod {    
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+    margin-top: 1rem;
+    width: 25rem;
+    text-align: center;
 }
